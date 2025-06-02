@@ -1,0 +1,40 @@
+@use '../helpers' as *;
+
+.header {
+   position: relative;
+
+   &:before {
+      content: '';
+      display: block;
+      min-height: 570px;
+      background-color: var(--color-dark);
+   }
+
+   &__inner {
+    position: absolute;
+    top: 26px;
+    left: 26%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      
+      @include desktop-above {
+         width: 100%;
+      }
+
+      @include desktop {
+         left: 16%;
+         width: 70%;
+      }
+   }
+
+   &__content { 
+      display: flex;
+      margin-left: 20px;
+
+      @include mobile-s {
+         margin-left: 0;
+      }
+   }
+}
+

@@ -1,0 +1,43 @@
+@use '../helpers' as *;
+
+.soc1als {
+   margin-left: 60px;
+
+   &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 17px;
+
+      @include lg {
+         opacity: 0;
+         transition: opacity 0.3s ease-in-out 0.2s; 
+      }
+
+      @include mobile-s {
+         display: none;
+      }
+   }
+
+   &__item {
+      margin-top: 2px;
+      &--light {
+         fill: var(--color-light);
+
+         &:hover {
+            opacity: 0.8;
+         }
+      }
+   }
+
+  .open {
+      position: relative;
+      z-index: 9999;  
+      display: flex;
+      opacity: 1;
+   }
+
+   @include mobile-s {
+      margin-left: 0;
+   }
+}
