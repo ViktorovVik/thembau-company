@@ -5,16 +5,18 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Themebau</title>
    <link rel="stylesheet" href="./styles/main.css">
+   <script src="./js/swiper/swiper.js"></script>
    <script src="js/main.js" type="module" defer></script>
 </head>
 <body>
    <header class="header">
       <div class="header__inner container">
-         <a href="#!" class="header__logo logo" title="Themebau" aria-label="Themebau">
+         <div class="header__top">
+            <a href="#!" class="header__logo logo" title="Themebau" aria-label="Themebau">
             <img width="108" height="30" src="./assets/logo/themebau..svg" alt="">
          </a>
          <div class="header__content">
-            <nav class="header__nav nav" data-js-nav-menu>
+            <nav class="header__nav nav" data-js-nav-menu aria-label="Main navigation">
                <ul class="nav__list">
                   <li class="nav__item">
                      <a href="#!" class="nav__link">home</a>
@@ -33,21 +35,21 @@
             <div class="header__soc1als soc1als" >
                <ul class="soc1als__list" data-js-soc1als>
                   <li class="soc1als__item soc1als__item--light">
-                     <a href="/" class="soc1als__link" aria-label="Facebook" title="Facebook" target="_blank">
+                     <a href="/" class="soc1als__link" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
                         <svg width="7" height="15">
                            <use xlink:href="./assets/icons/sprites.svg#facebook-icon"></use>
                         </svg>
                      </a>
                   </li>
                    <li class="soc1als__item soc1als__item--light">
-                     <a href="/" class="soc1als__link" aria-label="Twitter" title="Twitter" target="_blank">
+                     <a href="/" class="soc1als__link" aria-label="Twitter" title="Twitter" target="_blank" rel="noopener noreferrer">
                         <svg width="17" height="14">
                            <use xlink:href="./assets/icons/sprites.svg#twitter-icon"></use>
                         </svg>
                      </a>
                   </li>
                    <li class="soc1als__item soc1als__item--light">
-                     <a href="/" class="soc1als__link" aria-label="Instagram" title="Instagram" target="_blank">
+                     <a href="/" class="soc1als__link" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
                         <svg width="15.01" height="15">
                            <use xlink:href="./assets/icons/sprites.svg#instagram-icon"></use>
                         </svg>
@@ -55,16 +57,60 @@
                   </li>
                </ul>
             </div>
-            <button class="burger__menu visible-lg" data-js-header-burger-button>
+            <button class="burger__menu visible-lg" aria-label="Mobile navigation" aria-expanded="false" aria-controls="mainNavMenu" data-js-header-burger-button>
                <span></span>
                <span></span>
                <span></span>
             </button>
          </div>
+         </div>
+         <div class="header__bottom header-bottom">
+               <div class="swiper swiper-header">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide ">
+                        <div class="slide slide--colibri">
+                           <div class="slide__header">
+                              <span class="slide__name">Colibri Creative Project</span>
+                           </div>
+                        </div>                              
+                     </div>
+                     <div class="swiper-slide ">
+                        <div class="slide slide--architect">
+                           <div class="slide__header">
+                              <span class="slide__name">Modern Architect</span>
+                           </div>
+                        </div>                              
+                     </div>
+                     <div class="swiper-slide ">
+                        <div class="slide slide--cool">
+                           <div class="slide__header">
+                              <span class="slide__name">Cool Photography</span>
+                           </div>
+                        </div>                              
+                     </div>
+                   </div>
+                   <div class="header-bottom__slider-arrows">
+                  <button class="header-bottom__controls-prev" id="sliderPrev"></button>
+                  <button class="header-bottom__controls-next" id="sliderNext"></button>
+               </div>
+               </div> 
+               <div class="header-bottom__content">
+                  <span class="decor"></span>
+                  <div class="header-bottom__slider-controls-count">
+                  </div>
+                  <button class="header-bottom__btn">view</button>
+               </div> 
+            </div> 
       </div>
    </header>
    <main class="main">
+     <section class="hero"></section>
      
    </main>
 </body>
 </html>
+
+
+
+       
+ 

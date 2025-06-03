@@ -1,0 +1,53 @@
+@use '../helpers' as *;
+
+.swiper {
+   overflow: hidden;
+}
+
+.swiper-wrapper {
+   display: inline-flex;
+}
+
+.slide {
+   position: relative;
+   width: 100%;
+
+   &__name {
+      position: absolute;
+      left: 17%;
+      top: 37%;
+      display: block;
+      max-width: 516px;
+      width: 100%;
+      font-weight: 500;
+      font-size: clamp(1.875rem, 0.934rem + 4.71vw, 4.375rem);
+      line-height: 1.14286;
+      color: var(--color-light);
+   }
+
+   &--colibri {
+      background-image: url('../assets/images/hero/slider1.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 580px;
+   }
+
+   &--cool {
+      background-image: url('../assets/images/hero/slider3.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 580px;
+   }
+
+   &--architect {
+      background-image: url('../assets/images/hero/slider2.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 580px;
+   }
+}
+
+

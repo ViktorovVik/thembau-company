@@ -1,0 +1,102 @@
+@use '../helpers' as *;
+
+
+.header-bottom {
+   position: relative;
+
+   &__container {
+      max-width: 1300px;
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   &__slider-arrows {
+   position: absolute;
+    top: 44%;
+    right: -5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 110%;
+
+    @include lg {
+      top: -9%;
+      right: -10%;
+      justify-content: space-evenly;
+    }
+
+    @include mobile {
+      top: -5%;
+      right: -6%;
+      justify-content: space-evenly;
+    }
+   }
+
+   &__controls-prev {
+      width: 32px;
+      height: 32px;
+      background-image: url('../assets/icons/arrow.svg');
+   }
+
+   &__controls-next {
+      width: 32px;
+      height: 32px;
+      background-image: url('../assets/icons/arrow.svg');
+      transform: rotate(180deg);
+   }
+
+   &__content {
+      max-width: 792px;
+      margin: 0 auto;
+   }
+
+   &__controls-next {
+      transform: rotate(180deg);
+   }
+
+  &__slider-controls-count {
+    position: absolute;
+    left: 17%;
+    bottom: 20%;
+    color: var(--color-light); 
+
+    .custom-swiper-line:before {
+      content:  "—";
+      transform: rotate(100deg);
+      padding: 0 15px;
+    }
+  }
+
+   &__btn {
+      position: absolute;
+      bottom: 20%;
+      right: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90px;
+      height: 90px;
+      border-radius: 100%;
+      background-color: var(--color-light);
+
+      &:hover {
+         opacity: 0.7;
+      }
+
+      @include mobile {
+         bottom: 3%;y: ;
+      }
+   }
+}
+
+.decor {
+   position: absolute;
+   left: 18%;
+   top: 31%;
+   border: 1.20px solid var(--color-light);
+   width: 70px;
+   height: 0px;
+}
+
+
+

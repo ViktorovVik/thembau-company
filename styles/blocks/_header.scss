@@ -1,9 +1,9 @@
 @use '../helpers' as *;
 
 .header {
-   position: relative;
+   
 
-   &:before {
+     &:before {
       content: '';
       display: block;
       min-height: 570px;
@@ -14,9 +14,7 @@
     position: absolute;
     top: 26px;
     left: 26%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
       
       @include desktop-above {
          width: 100%;
@@ -28,6 +26,13 @@
       }
    }
 
+   &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 26px;
+   }
+
    &__content { 
       display: flex;
       margin-left: 20px;
@@ -35,6 +40,10 @@
       @include mobile-s {
          margin-left: 0;
       }
+   }
+
+   &__bottom {
+      
    }
 }
 
