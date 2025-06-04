@@ -1,7 +1,7 @@
 @use '../helpers' as *;
 
 .header {
-   padding-bottom: 88px;
+   padding-bottom: clamp(0rem, -2.071rem + 10.35vw, 5.5rem);
 
      &:before {
       content: '';

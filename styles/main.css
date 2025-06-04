@@ -390,7 +390,7 @@ svg * {
 }
 
 .header {
-  padding-bottom: 88px;
+  padding-bottom: clamp(0rem, -2.071rem + 10.35vw, 5.5rem);
 }
 .header:before {
   content: "";
@@ -776,7 +776,24 @@ svg * {
   }
 }
 .hero {
+  position: relative;
   padding-block: clamp(1.875rem, -1.066rem + 14.71vw, 9.688rem);
+}
+.hero__decor {
+  position: absolute;
+  top: -42%;
+  left: 19%;
+  z-index: -1;
+}
+@media (width <= 1200.98px) {
+  .hero__decor {
+    left: 3%;
+  }
+}
+@media (width <= 992.98px) {
+  .hero__decor {
+    display: none;
+  }
 }
 .hero__top {
   margin-bottom: 93px;
