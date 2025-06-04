@@ -26,7 +26,7 @@
     }
 
     @include mobile {
-      top: -5%;
+      top: 100%;
       right: -6%;
       justify-content: space-evenly;
     }
@@ -65,6 +65,10 @@
       transform: rotate(100deg);
       padding: 0 15px;
     }
+
+    @include mobile-s {
+      margin-bottom: 20px;
+    }
   }
 
    &__btn {
@@ -84,7 +88,7 @@
       }
 
       @include mobile {
-         bottom: 3%;
+         bottom: 2%;
       }
    }
 }

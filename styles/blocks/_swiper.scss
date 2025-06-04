@@ -11,6 +11,11 @@
 .slide {
    position: relative;
    width: 100%;
+   min-height: 580px;
+
+   @include mobile {
+      min-height: 450px;
+   }
 
    &__name {
       position: absolute;
@@ -23,6 +28,12 @@
       font-size: clamp(1.875rem, 0.934rem + 4.71vw, 4.375rem);
       line-height: 1.14286;
       color: var(--color-light);
+
+      @include mobile {
+         max-width: 216px;
+      }
+
+      
    }
 
    &--colibri {
@@ -30,7 +41,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      min-height: 580px;
+      
    }
 
    &--cool {
@@ -38,7 +49,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      min-height: 580px;
    }
 
    &--architect {
@@ -46,7 +56,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      min-height: 580px;
    }
 }
 
