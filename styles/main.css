@@ -45,7 +45,6 @@ body.is-lock {
 
 .h1,
 .h2,
-.h3,
 .h4,
 .h5,
 .h6 {
@@ -74,8 +73,12 @@ body.is-lock {
 }
 
 .h3 {
-  font-size: 24px;
-  line-height: 1.41667;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.h3--light {
+  color: var(--color-light);
 }
 
 a,
@@ -173,11 +176,16 @@ ul {
   }
 }
 
+.none {
+  display: none;
+}
+
 :root {
   --color-dark: #0e0e0e;
   --color-dark-rgb: 14, 14, 14;
   --color-light: #ffffff;
   --color-accent: #5a4b4b;
+  --color-green: #67a764;
   --transition-duration: 0.2s;
   --container-width: 1170px;
   --container-padding-x: 30px;
@@ -799,6 +807,11 @@ svg * {
   margin-bottom: 93px;
   text-align: center;
 }
+@media (width <= 768.98px) {
+  .hero__top {
+    margin-bottom: 33px;
+  }
+}
 .hero__subtitle {
   margin-bottom: 22px;
 }
@@ -844,6 +857,91 @@ svg * {
   .hero__btn {
     margin-left: auto;
   }
+}
+
+.functionality {
+  padding-bottom: 140px;
+}
+.functionality__container {
+  padding: 0 15px;
+  max-width: 1306px;
+  width: 100%;
+  margin: 0 auto;
+}
+.functionality__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+@media (width <= 992.98px) {
+  .functionality__list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card {
+  position: relative;
+  max-width: 304px;
+  width: 100%;
+  overflow: hidden;
+}
+.card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card__content {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+}
+.card__svg {
+  margin-bottom: 15px;
+  stroke: var(--color-light);
+}
+.card__title {
+  max-width: 161px;
+  width: 100%;
+}
+.card__bottom {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  z-index: 1;
+}
+.card__link {
+  display: flex;
+  align-items: center;
+  color: var(--color-light);
+}
+.card__link svg {
+  margin-top: 4px;
+  margin-left: 5px;
+  stroke: var(--color-light);
+  transition: transform 0.3s ease-out, stroke 0.3s ease-out;
+}
+.card__link:hover {
+  color: var(--color-green);
+}
+.card__link:hover svg {
+  transform: translateX(5px);
+  stroke: var(--color-green);
+}
+.card:hover .card__content {
+  transform: translateY(-46px);
+}
+.card:hover .card__bottom {
+  transform: translateY(-10%);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
