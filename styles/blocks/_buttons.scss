@@ -1,0 +1,45 @@
+@use '../helpers' as *;
+
+.btn {
+   display: flex;
+   align-items: center;
+   column-gap: 20px;
+   padding: 0 39px;
+   height: 54px;
+   background: var(--color-dark);
+   color: var(--color-light);
+
+   &:hover {
+      opacity: 0.9;
+   }
+
+    &:active {
+      background: var(--color-accent);
+   }
+
+  &:hover .dot {
+     animation: dot-breathe 1.2s infinite ease-in-out;
+  }
+}
+
+.dot {
+   display: inline-block;
+   width: 6px;
+   height: 6px;
+   border-radius: 100%;
+   background-color: var(--color-light);
+}
+
+
+@keyframes dot-breathe {
+  0% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-3px); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+

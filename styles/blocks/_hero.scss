@@ -1,3 +1,63 @@
 @use '../helpers' as *;
 
+.hero {
+   padding-block: clamp(1.875rem, -1.066rem + 14.71vw, 9.688rem);
+
+   &__top {
+      margin-bottom: 93px;
+      text-align: center;
+      
+   }
+
+   &__subtitle {
+      margin-bottom: 22px;
+   }
+
+   &__title {
+      margin: 0 auto;
+      max-width: 615px;
+   }
+
+   &__content {
+      display: flex;
+      justify-content: center;
+      column-gap: 109px;
+      padding-bottom: 27px;
+
+      @include lg {
+         column-gap: 60px;
+         flex-wrap: wrap;
+         margin: 0 auto;
+         row-gap: 30px;
+         max-width: 391px;
+      }
+   }
+
+   &__left {
+      border-top: 1px solid var(--color-dark);
+   }
+
+   &__text {
+      padding-top: 33px;
+      max-width: 391px;
+      font-size: 20px;
+      line-height: 1.5;
+   }
+
+   &__desc {
+      max-width: 463px;
+      p {
+         font-size: 17px;
+         line-height: 1.58824;
+      }
+   }
+
+   &__btn {
+      margin-left: 37.8rem;
+
+      @include lg {
+         margin-left: auto;
+      }
+   }
+}
 
