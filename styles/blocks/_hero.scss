@@ -1,7 +1,23 @@
 @use '../helpers' as *;
 
 .hero {
+   position: relative;
    padding-block: clamp(1.875rem, -1.066rem + 14.71vw, 9.688rem);
+
+   &__decor {
+      position: absolute;
+      top: -42%;
+      left: 19%;
+      z-index: -1;
+
+      @include tablet {
+         left: 3%;
+      }
+
+      @include lg {
+         display: none;
+      }
+   }
 
    &__top {
       margin-bottom: 93px;
