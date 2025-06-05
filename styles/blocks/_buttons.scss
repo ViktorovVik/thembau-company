@@ -9,6 +9,10 @@
    background: var(--color-dark);
    color: var(--color-light);
 
+   &--transparent {
+    background: transparent;
+   }
+
    &:hover {
       opacity: 0.9;
    }
