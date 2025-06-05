@@ -71,6 +71,12 @@
     }
   }
 
+   &__decor {
+      position: absolute;
+      left: 18%;
+      top: 31%;
+   }
+
    &__btn {
       position: absolute;
       bottom: 20%;
@@ -93,14 +99,7 @@
    }
 }
 
-.decor {
-   position: absolute;
-   left: 18%;
-   top: 31%;
-   border: 1.20px solid var(--color-light);
-   width: 70px;
-   height: 0px;
-}
+
 
 
 

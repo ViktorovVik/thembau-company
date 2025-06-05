@@ -20,6 +20,10 @@
   &:hover .dot {
      animation: dot-breathe 1.2s infinite ease-in-out;
   }
+
+  @include mobile-s {
+     height: 44px;
+  }
 }
 
 .dot {
