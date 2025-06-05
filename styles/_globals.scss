@@ -59,7 +59,7 @@ body {
    }
 
    &--bigger {
-      font-size: 100px;
+      font-size: clamp(1.875rem, 0.228rem + 8.24vw, 6.25rem);
    }
 }
 
@@ -70,6 +70,11 @@ body {
    &--light {
       color: var(--color-light);
    }
+}
+
+.h4 {
+   font-size: 24px;
+   line-height: 1.41667;
 }
 
 a,

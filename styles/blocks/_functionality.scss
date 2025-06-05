@@ -1,7 +1,7 @@
 @use '../helpers' as *;
 
 .functionality {
-   padding-bottom: 140px;
+   padding-bottom: clamp(1.25rem, -1.199rem + 12.24vw, 8.75rem);
 
    &__inner {
 
