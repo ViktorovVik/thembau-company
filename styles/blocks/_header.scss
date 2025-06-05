@@ -21,9 +21,11 @@
       }
 
       @include desktop {
-         left: 16%;
-         width: 70%;
+        left: 7%;
+        width: 87%;
       }
+
+
    }
 
    &__top {
@@ -40,6 +42,10 @@
       @include mobile-s {
          margin-left: 0;
       }
+   }
+
+   &__soc1als {
+       margin-left: 60px;
    }
 }
 
