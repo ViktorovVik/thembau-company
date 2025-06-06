@@ -7,7 +7,7 @@ export class WorkProcessManager {
 
     async fetchData() {
         try {
-            const jsonPath = './js/data/text.json'; 
+            const jsonPath = 'js/data/text.json'; 
             const response = await fetch(jsonPath);
 
             if (!response.ok) {
