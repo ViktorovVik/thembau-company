@@ -1,4 +1,5 @@
-import {MobileMenu} from './MobileMenu.js'
+import {MobileMenu} from './MobileMenu.js';
+import {WorkProcessManager} from './WorkProcessManager.js';
 
 const mobileNav = new MobileMenu();
 
@@ -34,3 +35,5 @@ const swiperHEader = new Swiper('.swiper-header', {
   },
 });
 
+const work = new WorkProcessManager();
+await work.init()
