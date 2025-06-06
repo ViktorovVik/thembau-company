@@ -102,6 +102,17 @@
        @include mobile {
          margin-bottom: 30px;
       }
+
+      p[data-js-text] {
+         opacity: 0;
+         transform: translateY(10px); 
+         transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+
+         &.is-visible {
+         opacity: 1;
+         transform: translateY(0); 
+         }
+      } 
    }
 
    &__btn {
