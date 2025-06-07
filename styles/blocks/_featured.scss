@@ -35,6 +35,10 @@
       }
    }
 
+   &__btn {
+     padding-inline: 43px;
+   }
+
    &__decor {
       @include lg {
          display: none;
