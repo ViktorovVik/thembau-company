@@ -1,0 +1,94 @@
+@use '../helpers' as *;
+
+.create {
+   padding-block: clamp(1.875rem, -0.858rem + 13.67vw, 9.375rem);
+
+   &__inner {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+
+      @include lg {
+         flex-direction: column;
+         row-gap: 30px;
+      }
+   }
+
+   &__container {
+      max-width: 1198px;
+      padding-inline: 30px;
+      margin: 0 auto;
+   }
+
+   &__pics {
+      display: grid;
+      grid-template-columns: 120px 140px 30px 290px auto;
+      row-gap: 30px; 
+      align-items: start;
+
+      @include tablet {
+         grid-template-columns: 50px 140px 30px 290px auto;   
+      }
+
+       @include lg {
+          grid-template-columns: 0 140px 30px 290px auto; 
+      }
+
+      @include mobile-s {
+          grid-template-columns: 20px 110px 20px 150px auto; 
+          row-gap: 15px;
+      }
+   }
+
+
+   &__img {
+
+      &--big {
+         grid-column: span 5;
+      }
+
+      &--small {
+         grid-column: 2;
+      }
+
+      &--middle {
+         grid-column: 4;
+      }
+   }
+
+   &__desc {
+      display: grid;
+      grid-template-columns: 100px repeat(5, 1fr);  
+      row-gap: 37px;
+
+      @include tablet {
+         grid-template-columns: 40px repeat(5, 1fr);   
+      }
+
+      @include lg {
+          grid-template-columns: 0 repeat(5, 1fr); 
+      }
+   }
+
+   &__title {
+      max-width: 357px;
+      grid-column: 1 / span 4;
+
+      @include tablet {
+      grid-column: 1 / span 6;   
+      }
+   }
+
+   &__text {
+      max-width: 438px;
+      grid-column: 2 / span 5;
+      grid-row: 2;
+      margin-bottom: 15px;
+   }
+
+   &__btn {
+      display: inline-flex;
+      grid-column: 2 / span 3;
+   }
+}
+

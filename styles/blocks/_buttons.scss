@@ -1,13 +1,15 @@
 @use '../helpers' as *;
 
 .btn {
-   display: flex;
+   display: inline-flex;
+   justify-content: center;
    align-items: center;
    column-gap: 20px;
-   padding: 0 39px;
+   max-width: 170px;
    height: 54px;
    background: var(--color-dark);
    color: var(--color-light);
+   cursor: pointer;
 
    &--transparent {
     background: transparent;
