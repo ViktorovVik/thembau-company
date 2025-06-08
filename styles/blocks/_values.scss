@@ -1,0 +1,88 @@
+@use '../helpers' as *;
+
+.values {
+   padding-bottom: clamp(1.875rem, -0.564rem + 12.2vw, 8.125rem);
+
+   &__title {
+      text-align: center;
+      margin-bottom: 84px;
+   }
+
+   &__scrollbar {
+      margin: 0 auto;
+      background-color: #dddddd;
+      width: 370px;
+      height: 3px; 
+   }
+
+   &__swiper-scrollbar {
+      display: block !important;   
+   }
+
+   &__swiper-scrollbar-drag {
+      background-color: var(--color-dark);
+      width: 130px !important;
+      height: 3px;
+   }   
+}
+
+.values-slide {
+   position: relative;
+   display: flex;
+   column-gap: 30px;
+   overflow: hidden;
+
+   @include lg {
+      justify-content: center;
+   }
+
+   &:hover {
+      .outer-hex {
+         transform: translateY(-2px);
+      }
+
+      .inner-hex {
+         transform: rotate(15deg);
+      }
+
+      .star-shape {
+         transform: scale(1.1);
+      }
+
+      .values-slide__link svg path {
+         transform: translateX(1px);
+         transition: transform 0.3s ease-out;
+      }
+    }
+   
+   &__content {
+      max-width: 239px;
+   }
+
+   &__title {
+      margin-bottom: 17px;
+   }
+
+   &__text {
+      margin-bottom: 19px;
+   }
+
+   &__link {
+      color: var(--color-dark);
+
+      svg {
+      margin-left: 15px;
+      stroke: var(--color-dark);
+      }
+   }
+
+   &__wrapper-link {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+   }
+}
+

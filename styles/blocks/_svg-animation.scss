@@ -1,0 +1,28 @@
+.svg-container {
+        height: 71px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        path {
+            transition: all 0.5s ease-in-out;
+            transform-origin: center center;
+            stroke: #0E0E0E;
+            fill: white;
+        }
+    }
+
+.svg-container path {
+    transition: all 0.5s ease-in-out; 
+    transform-origin: center center;
+}
+
+.outer-hex {
+   stroke: #0E0E0E;
+}
+.inner-hex {
+   stroke: #0E0E0E;
+}
+.star-shape {
+   stroke: #0E0E0E;
+}

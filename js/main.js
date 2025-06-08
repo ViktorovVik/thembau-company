@@ -2,8 +2,10 @@ import {MobileMenu} from './MobileMenu.js';
 import {WorkProcessManager} from './WorkProcessManager.js';
 
 const mobileNav = new MobileMenu();
+const work = new WorkProcessManager();
+await work.init()
 
-const swiperHEader = new Swiper('.swiper-header', {
+const swiperHeader = new Swiper('.swiper-header', {
    loop: true,
    speed: 1000,
    keyboard: {
@@ -35,5 +37,27 @@ const swiperHEader = new Swiper('.swiper-header', {
   },
 });
 
-const work = new WorkProcessManager();
-await work.init()
+const valuesSwiper = new Swiper(".swiper-values", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    freeMode: false,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      clickable: true,
+    },
+    breakpoints: {
+      760: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 60,
+      },
+    }
+});
+
