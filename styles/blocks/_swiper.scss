@@ -10,11 +10,14 @@
 
 .slide {
    position: relative;
-   width: 100%;
-   min-height: 580px;
-
+   
    @include mobile {
       min-height: 450px;
+   }
+
+   &__header {
+      width: 100%;
+      min-height: 580px;
    }
 
    &__name {
