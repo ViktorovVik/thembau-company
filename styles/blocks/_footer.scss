@@ -20,7 +20,7 @@
       position: absolute;
       top: 23%;
       right: 14.3%;
-      fill: #202020;
+      fill: var(--color-circle-dark);
 
       @include desktop {
          right: -22.7%;

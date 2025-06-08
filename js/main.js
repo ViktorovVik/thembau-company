@@ -61,3 +61,30 @@ const valuesSwiper = new Swiper(".swiper-values", {
     }
 });
 
+const swiperTestimonials = new Swiper('.swiper-testimonials', {
+   loop: true,
+   speed: 1000,
+   keyboard: {
+      enabled: true
+   },
+   slidesPerView: 1,
+   spaceBetween: 0,
+
+   pagination: {
+      el: '.testimonials__slider-controls-count',
+      type: 'fraction',
+
+      formatFractionTotal: function (total) {
+        return String(total).padStart(2, '0');
+      },
+      formatFractionCurrent: function (current) {
+        return String(current).padStart(2, '0');
+      },
+      renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' +
+               '<span class="custom-swiper-line"></span>' + 
+               '<span class="' + totalClass + '"></span>';
+      }
+   },
+});
+
