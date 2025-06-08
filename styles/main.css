@@ -820,6 +820,11 @@ svg * {
   background-position: center;
 }
 
+.swiper-values-wrapper {
+  margin-bottom: 85px;
+  overflow: hidden;
+}
+
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -1342,6 +1347,107 @@ svg * {
 .create__btn {
   display: inline-flex;
   grid-column: 2/span 3;
+}
+
+.values {
+  padding-bottom: clamp(1.875rem, -0.564rem + 12.2vw, 8.125rem);
+}
+.values__title {
+  text-align: center;
+  margin-bottom: 84px;
+}
+.values__scrollbar {
+  margin: 0 auto;
+  background-color: #dddddd;
+  width: 370px;
+  height: 3px;
+}
+.values__swiper-scrollbar {
+  display: block !important;
+}
+.values__swiper-scrollbar-drag {
+  background-color: var(--color-dark);
+  width: 130px !important;
+  height: 3px;
+}
+
+.values-slide {
+  position: relative;
+  display: flex;
+  column-gap: 30px;
+  overflow: hidden;
+}
+@media (width <= 992.98px) {
+  .values-slide {
+    justify-content: center;
+  }
+}
+.values-slide:hover .outer-hex {
+  transform: translateY(-2px);
+}
+.values-slide:hover .inner-hex {
+  transform: rotate(15deg);
+}
+.values-slide:hover .star-shape {
+  transform: scale(1.1);
+}
+.values-slide:hover .values-slide__link svg path {
+  transform: translateX(1px);
+  transition: transform 0.3s ease-out;
+}
+.values-slide__content {
+  max-width: 239px;
+}
+.values-slide__title {
+  margin-bottom: 17px;
+}
+.values-slide__text {
+  margin-bottom: 19px;
+}
+.values-slide__link {
+  color: var(--color-dark);
+}
+.values-slide__link svg {
+  margin-left: 15px;
+  stroke: var(--color-dark);
+}
+.values-slide__wrapper-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.svg-container {
+  height: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-container path {
+  transition: all 0.5s ease-in-out;
+  transform-origin: center center;
+  stroke: #0E0E0E;
+  fill: white;
+}
+
+.svg-container path {
+  transition: all 0.5s ease-in-out;
+  transform-origin: center center;
+}
+
+.outer-hex {
+  stroke: #0E0E0E;
+}
+
+.inner-hex {
+  stroke: #0E0E0E;
+}
+
+.star-shape {
+  stroke: #0E0E0E;
 }
 
 .footer {
