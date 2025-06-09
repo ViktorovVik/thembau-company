@@ -3,7 +3,7 @@ import {WorkProcessManager} from './WorkProcessManager.js';
 
 const mobileNav = new MobileMenu();
 const work = new WorkProcessManager();
-await work.init()
+await work.init();
 
 const swiperHeader = new Swiper('.swiper-header', {
    loop: true,
