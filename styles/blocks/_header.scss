@@ -10,12 +10,20 @@
       background-color: var(--color-dark);
    }
 
+   &--portfolio {
+       &:before {
+         content: '';
+         display: block;
+         min-height: 570px;
+         background-color: var(--color-light);
+      }  
+   }
+
    &__inner {
     position: absolute;
     top: 26px;
     left: 26%;
     
-      
       @include desktop-above {
          width: 100%;
       }
@@ -33,11 +41,14 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 26px;
+
    }
 
    &__content { 
       display: flex;
       margin-left: 20px;
+
+      
 
       @include mobile-s {
          margin-left: 0;
