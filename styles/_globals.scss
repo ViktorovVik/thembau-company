@@ -53,6 +53,10 @@ body {
 .h2 {
    line-height: 1.16;
 
+   &--small {
+      font-size: 34px;
+   }
+
    &--middle {
       font-size: 48px;
       line-height: 1.20833;

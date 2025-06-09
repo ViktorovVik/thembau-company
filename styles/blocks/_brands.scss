@@ -1,2 +1,61 @@
 @use '../helpers' as *;
 
+
+.brands {
+   padding-block: clamp(1.875rem, -1.486rem + 16.81vw, 9.375rem);
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      padding-inline: 30px;
+      max-width: 1034px;
+      width: 100%;
+      margin: 0 auto;
+
+      @include lg {
+         flex-direction: column;
+      }
+   }
+
+   &__text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 17px;
+
+      @include lg {
+         margin-bottom: 40px;
+      }
+   }
+
+   &__subtitle {
+      font-size: 15px;
+   }
+
+   &__title {
+      max-width: 268px;
+
+      @include lg {
+         max-width: 100%;
+         text-align: center;
+      }
+   }
+
+   &__pics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      column-gap: 92px;
+      row-gap: 54px;
+
+      @include lg {
+         justify-items: center;
+      }
+
+      @include mobile {
+         column-gap: 22px;
+         row-gap: 14px;
+      }
+   }
+}
+
+
