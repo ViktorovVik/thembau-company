@@ -1651,9 +1651,14 @@ svg * {
 }
 .new-card__item {
   position: relative;
+  transition: box-shadow 0.3s ease;
+}
+.new-card__item:hover .new-card__img {
+  transform: scale(1.05);
 }
 .new-card__img {
   margin-bottom: 27px;
+  transition: transform 0.3s ease;
 }
 .new-card__date {
   position: absolute;
@@ -1678,6 +1683,25 @@ svg * {
   bottom: 0;
 }
 
+.together {
+  position: relative;
+  padding-bottom: clamp(1.25rem, -1.809rem + 15.29vw, 9.375rem);
+}
+.together__inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.together__title {
+  margin-top: 20px;
+  max-width: 483px;
+}
+.together__img {
+  position: absolute;
+  top: -11%;
+  left: 43.5%;
+  z-index: -1;
+}
 .footer {
   position: relative;
   padding-block: clamp(1.875rem, -0.243rem + 10.59vw, 7.5rem);
