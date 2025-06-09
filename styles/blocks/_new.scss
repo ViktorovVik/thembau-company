@@ -1,0 +1,72 @@
+@use '../helpers' as *;
+
+.new {
+   padding-bottom: clamp(1.875rem, -0.949rem + 14.12vw, 9.375rem);
+
+   &__inner {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__title {
+      margin-bottom: clamp(1.25rem, -0.397rem + 8.24vw, 5.625rem);
+      text-align: center;
+   }
+
+   &__cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 370px);
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: clamp(1.25rem, -0.209rem + 7.29vw, 5.125rem);
+
+      @include tablet {
+         justify-items: center;
+      }
+
+      @include mobile {
+         grid-template-columns: repeat(auto-fit, 250px);
+      }
+   }
+
+   &__btn {
+      margin: 0 auto;
+   }
+}
+
+.new-card {
+   overflow: hidden;
+
+   &__item {
+      position: relative;
+   }
+
+   &__img {
+      margin-bottom: 27px;
+   }
+
+   &__date {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 15px 15px;
+      background-color: var(--color-light);
+      font-size: 14px;
+      line-height: 1.35714;
+   }
+
+   &__title {
+      max-width: 288px;
+      font-weight: 500;
+      line-height: 1.5;
+   }
+
+   &__link {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+   }
+}
