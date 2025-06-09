@@ -900,7 +900,7 @@ svg * {
 }
 .hero {
   position: relative;
-  padding-block: clamp(1.875rem, -1.066rem + 14.71vw, 9.688rem);
+  padding-block: 100px;
 }
 .hero__decor {
   position: absolute;
