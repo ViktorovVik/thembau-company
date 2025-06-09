@@ -1,8 +1,11 @@
+@use '../helpers' as *;
+
 .svg-container {
         height: 71px;
         display: flex;
         justify-content: center;
         align-items: center;
+
 
         path {
             transition: all 0.5s ease-in-out;
@@ -10,7 +13,12 @@
             stroke: #0E0E0E;
             fill: white;
         }
-    }
+
+        
+        @include mobile-s {
+        display: none;
+        }
+}
 
 .svg-container path {
     transition: all 0.5s ease-in-out; 
