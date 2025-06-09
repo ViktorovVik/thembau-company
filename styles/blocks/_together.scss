@@ -1,0 +1,29 @@
+@use '../helpers' as *;
+
+.together {
+   position: relative;
+   padding-bottom: clamp(1.25rem, -1.809rem + 15.29vw, 9.375rem);
+
+   &__inner {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+   }
+
+   &__title {
+      margin-top: 20px;
+      max-width: 483px;
+   }
+
+   &__img {
+      position: absolute;
+      top: -11%;
+      left: 43.5%;
+      z-index: -1;
+   }
+
+   &__link {
+
+   }
+}
+
