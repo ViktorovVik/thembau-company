@@ -39,10 +39,16 @@
 
    &__item {
       position: relative;
+      transition: box-shadow 0.3s ease; 
    }
+
+    &__item:hover &__img {
+    transform: scale(1.05); 
+  }
 
    &__img {
       margin-bottom: 27px;
+      transition: transform 0.3s ease;
    }
 
    &__date {
@@ -69,4 +75,4 @@
       right: 0;
       bottom: 0;
    }
-}
+} 
