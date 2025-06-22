@@ -1,0 +1,16 @@
+@use '../helpers' as *;
+
+.decor {
+   border: 1.20px solid var(--color-light);
+   width: 70px;
+   height: 0px;
+
+   &--dark {
+      border: 1.20px solid var(--color-dark);
+   }
+
+   &--vertical {
+      width: 0;
+      height: 70px;
+   }
+}

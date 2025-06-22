@@ -33,7 +33,6 @@ body {
 
 .h1,
 .h2,
-.h3,
 .h4,
 .h5,
 .h6 {
@@ -54,17 +53,31 @@ body {
 .h2 {
    line-height: 1.16;
 
+   &--small {
+      font-size: 34px;
+   }
+
    &--middle {
       font-size: 48px;
       line-height: 1.20833;
    }
 
    &--bigger {
-      font-size: 100px;
+      font-size: clamp(1.875rem, 0.228rem + 8.24vw, 6.25rem);
    }
 }
 
 .h3 {
+   font-size: 20px;
+   line-height: 1.5;
+   font-weight: 400;
+
+   &--light {
+      color: var(--color-light);
+   }
+}
+
+.h4 {
    font-size: 24px;
    line-height: 1.41667;
 }
@@ -83,11 +96,7 @@ a {
    color: inherit;
    margin: 0;
    padding: 0;
-
-  
-   &:hover {
-      color: var(--grey-color);
-   }
+   
    &[class] {
       text-decoration: none;
    }

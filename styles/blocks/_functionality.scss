@@ -1,0 +1,24 @@
+@use '../helpers' as *;
+
+.functionality {
+   padding-bottom: clamp(1.25rem, -1.199rem + 12.24vw, 8.75rem);
+
+   &__container {
+      padding: 0 15px;
+      max-width: 1306px;
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      @include lg {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+   }
+}

@@ -3,36 +3,44 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+   <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+   <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+   <link rel="manifest" href="./assets/favicon/site.webmanifest" />
    <title>Themebau</title>
+   <meta name="description" content="Your full-cycle digital agency. We develop websites, optimize SEO, launch effective PPC campaigns and SMM. Boost your sales today!">
    <link rel="stylesheet" href="./styles/main.css">
    <script src="./js/swiper/swiper.js"></script>
    <script src="js/main.js" type="module" defer></script>
 </head>
 <body>
    <header class="header none">
+=======
+   <header class="header none1">
       <div class="header__inner container">
          <div class="header__top">
-            <a href="#!" class="header__logo logo" title="Themebau" aria-label="Themebau">
+            <a href="index.html" class="header__logo logo" title="Themebau" aria-label="Themebau">
             <img width="108" height="30" src="./assets/logo/themebau..svg" alt="">
          </a>
          <div class="header__content">
-            <nav class="header__nav nav" data-js-nav-menu aria-label="Main navigation">
+            <nav class="header__nav nav" data-js-nav-menu aria-label="Main navigation" id="mainNavMenu">
                <ul class="nav__list">
                   <li class="nav__item">
-                     <a href="#!" class="nav__link">home</a>
+                     <a href="index.html" class="nav__link">home</a>
                   </li>
                   <li class="nav__item">
-                     <a href="#!" class="nav__link">projects</a>
+                     <a href="#featured" class="nav__link">projects</a>
                   </li>
                   <li class="nav__item">
-                     <a href="#!" class="nav__link">pages</a>
+                     <a href="#brands" class="nav__link">brands</a>
                   </li>
                   <li class="nav__item">
-                     <a href="#!" class="nav__link nav__link--light">contact</a>
+                     <a href="#footer" class="nav__link nav__link--light">contact</a>
                   </li>
                </ul>
             </nav>
-            <div class="header__soc1als soc1als" >
+            <nav  class="header__soc1als soc1als" aria-label="Social media navigation">
                <ul class="soc1als__list" data-js-soc1als>
                   <li class="soc1als__item soc1als__item--light">
                      <a href="/" class="soc1als__link" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
@@ -56,8 +64,8 @@
                      </a>
                   </li>
                </ul>
-            </div>
-            <button class="burger__menu visible-lg" aria-label="Mobile navigation" aria-expanded="false" aria-controls="mainNavMenu" data-js-header-burger-button>
+            </nav>
+            <button class="burger__menu visible-lg " aria-label="Mobile navigation" aria-expanded="false" aria-controls="mainNavMenu" data-js-header-burger-button>
                <span></span>
                <span></span>
                <span></span>
@@ -95,28 +103,28 @@
                </div>
                </div> 
                <div class="header-bottom__content">
-                  <span class="decor"></span>
+                  <span class="header-bottom__decor decor"></span>
                   <div class="header-bottom__slider-controls-count">
                   </div>
-                  <button class="header-bottom__btn">view</button>
+                  <a href="#" target="_blank" class="header-bottom__btn">view</a>
                </div> 
             </div> 
       </div>
    </header>
    <main class="main">
-     <section class="hero none">
+     <section class="hero none1">
       <div class="hero__decor">
          <svg  width="641" height="641">
-      <use xlink:href="./assets/icons/sprites.svg#circle-icon"></use>
-      </svg>
+            <use xlink:href="./assets/icons/sprites.svg#circle-icon"></use>
+         </svg>
       </div>
       <div class="hero__inner container">
          <div class="hero__top">
             <p class="hero__subtitle">who we are</p>
             <div class="hero__title">
                <h1 class="h1">
-               An award-winning design & dev team 
-               that is proud of our work  👋
+               An&nbsp;award-winning design &amp;&nbsp;dev team 
+               that is&nbsp;proud of&nbsp;our work 👋
             </h1>
             </div>
          </div>
@@ -140,6 +148,8 @@
       </div>
      </section>
      <section class="functionality none">
+
+     <section class="functionality none1">
       <div class="functionality__inner functionality__container">
          <ul class="functionality__list">
             <li class="functionality__item">
@@ -230,7 +240,7 @@
          </ul>
       </div>
      </section>
-     <section class="featured none" id="featured">
+     <section class="featured none1" id="featured">
       <div class="featured__inner container">
          <div class="featured__header">
                <div class="featured__title">
@@ -277,7 +287,7 @@
          </div>
       </div>
      </section>
-     <section class="process none">
+     <section class="process none1">
       <div class="precess__inner container">
          <div class="process__title">
             <h2 class="h2 h2--middle">Work process</h2>
@@ -311,7 +321,7 @@
          </div>
       </div>
      </section>
-     <section class="create none">
+     <section class="create none1">
       <div class="create__inner create__container">
          <div class="create__pics">
             <img src="./assets/images/create/big.webp" loading="lazy" alt="/" width="470" height="290" class="create__img create__img--big">
@@ -336,7 +346,7 @@
          </div>
       </div>
      </section>
-     <section class="values none">
+     <section class="values none1">
       <div class="values__inner create__container">
          <div class="values__title">
             <h2 class="h2 h2--bigger">Values</h2>
@@ -490,7 +500,7 @@
          </div>
       </div>
      </section>
-     <section class="testimonials none">
+     <section class="testimonials none1">
       <div class="testimonials__inner container">
          <h2 class="visually-hidden">testimonials</h2>
          <img class="testimonials__quotes quotes" loading="lazy" width="38" height="24" src="./assets/images/testimonials/quotes.png" alt="/">
@@ -652,11 +662,207 @@
          </div>
       </div>
      </section>
+     <section class="brands none1" id="brands">
+      <div class="brands__inner">
+         <div class="brands__container">
+            <div class="brands__text">
+               <span class="brands__subtitle">our clients</span>
+               <div class="brands__title">
+                  <h2 class="h2 h2--small">We've worked 
+                     with 50+ brands
+                  </h2>
+               </div>
+            </div>
+            <div class="brands__pics">
+               <img src="./assets/images/brands/natural.png" alt="natural" width="128" height="41" loading="lazy">
+               <img src="./assets/images/brands/newave.png" alt="new wave" width="105" height="57" loading="lazy">
+               <img src="./assets/images/brands/retro.png" alt="retro" width="109" height="64" loading="lazy">
+               <img src="./assets/images/brands/a.png" alt="a something" width="123" height="102" loading="lazy">
+               <img src="./assets/images/brands/iconic.png" alt="iconic" width="115" height="50" loading="lazy">
+               <img src="./assets/images/brands/hispter.png" alt="hipster" width="129" height="61" loading="lazy">
+            </div>
+         </div>
+      </div>
+     </section>
+     <section class="new none1">
+      <div class="new__inner container">
+         <div class="new__title">
+            <h2 class="h2 h2--middle">What’s new?</h2>
+         </div>
+         <div class="new__cards new-card">
+            <figure class="new-card__item">
+               <img src="./assets/images/new/image1.webp" 
+                  alt="Office explained 
+                  in fewer than 100+ Characters" 
+                  loading="lazy" 
+                  width="370" 
+                  height="300" 
+                  class="new-card__img">
+               <time datetime="2020-05-12" class="new-card__date">
+                  <span class="new-card__date-day">12</span>
+                  <span class="new-card__date-month">may,</span>
+                  <span class="new-card__date-year">2020</span>
+               </time>
+               <h3 class="new-card__title">Office explained 
+                  in fewer than 100+ Characters
+               </h3>
+               <a href="#!" target="_blank" class="new-card__link link-wrapper"></a>
+            </figure>
+            <figure class="new-card__item">
+               <img src="./assets/images/new/image2.webp" 
+                  alt="Office explained 
+                  in fewer than 100+ Characters" 
+                  loading="lazy" 
+                  width="370" 
+                  height="300" 
+                  class="new-card__img">
+               <time datetime="2020-05-12" class="new-card__date">
+                  <span class="new-card__date-day">08</span>
+                  <span class="new-card__date-month">may,</span>
+                  <span class="new-card__date-year">2020</span>
+               </time>
+               <h3 class="new-card__title">This week&rsquo;s top Stories about 
+                  Development
+               </h3>
+               <a href="#!" target="_blank" class="new-card__link link-wrapper"></a>
+            </figure>
+            <figure class="new-card__item">
+               <img src="./assets/images/new/image3.webp" 
+                  alt="Office explained 
+                  in fewer than 100+ Characters" 
+                  loading="lazy" 
+                  width="370" 
+                  height="300" 
+                  class="new-card__img">
+               <time datetime="2020-05-12" class="new-card__date">
+                  <span class="new-card__date-day">05</span>
+                  <span class="new-card__date-month">may,</span>
+                  <span class="new-card__date-year">2020</span>
+               </time>
+               <h3 class="new-card__title">Facts about Business that you 
+                  never knew
+               </h3>
+               <a href="#!" target="_blank" class="new-card__link link-wrapper"></a>
+            </figure>
+         </div>
+         <a class="new__btn btn">about us<span class="dot"></span></a>
+      </div>
+     </section>
+     <section class="together none1">
+      <div class="together__inner container">
+         <div class="together__wrapper">
+            <h2 class="together__title h2 h2--bigger">Let’s work
+               together
+            </h2>
+            <img class="together__img" src="./assets/images/together/image.webp" alt="/" width="230" height="260" loading="lazy">
+            <svg width="56" height="30" viewBox="0 0 56 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M2 15H54M54 15L41 2M54 15L41 28" stroke="#0E0E0E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <a href="#1" target="_blank" class="together__link link-wrapper"></a>
+         </div>
+      </div>
+     </section>
+     <footer class="footer none1" id="footer">
+      <div class="footer__inner container">
+         <div class="footer__decor">
+            <svg  width="641" height="641">
+               <use xlink:href="./assets/icons/sprites.svg#circle-icon"></use>
+            </svg>
+         </div>
+         <div class="footer__left">
+            <a href="index.html" class="footer__logo logo logo--footer" title="Themebau" aria-label="Themebau">
+               <img width="184" height="44" src="./assets/logo/logo-big..svg" alt="">
+            </a>
+            <div class="footer__text">
+               <p>Be&nbsp;saying moveth spirit fruitful 
+                  called set evening fly give shall 
+                  moveth lesser very.
+               </p>
+            </div>
+            <div class="footer__props">
+               <a href="tel:+442071128285" class="footer__link">+44 207 112 82 85</a>
+               <a href="mailto:hello@themebau.com" class="footer__link">hello@themebau.com</a>
+            </div>
+            <nav class="footer__soc1als soc1als" aria-label="Social media navigation">
+               <ul class="soc1als__list" data-js-soc1als>
+                  <li class="soc1als__item soc1als__item--light">
+                     <a href="/" class="soc1als__link" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
+                        <svg width="7" height="15">
+                           <use xlink:href="./assets/icons/sprites.svg#facebook-icon"></use>
+                        </svg>
+                     </a>
+                  </li>
+                   <li class="soc1als__item soc1als__item--light">
+                     <a href="/" class="soc1als__link" aria-label="Twitter" title="Twitter" target="_blank" rel="noopener noreferrer">
+                        <svg width="17" height="14">
+                           <use xlink:href="./assets/icons/sprites.svg#twitter-icon"></use>
+                        </svg>
+                     </a>
+                  </li>
+                   <li class="footer__soc1als soc1als__item soc1als__item--light">
+                     <a href="/" class="soc1als__link" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+                        <svg width="15.01" height="15">
+                           <use xlink:href="./assets/icons/sprites.svg#instagram-icon"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         <div class="footer__divider divider"></div>
+         <div class="footer__right">
+            <form class="footer__form form" action="userEmail">
+               <label class="form__label" for="userEmail">subscribe of newsletter</label>
+                  <div class="form__action">
+                     <input class="form__input" 
+                     type="email" 
+                     id="userEmail" 
+                     name="email" 
+                     placeholder="Your Email *" 
+                     required 
+                     aria-describedby="email-help">
+                     <button class="footer__btn btn btn--transparent" type="submit">send<span class="dot"></span></button>
+                  </div>
+                  <small id="email-help" class="form-text">We will never share your email with third parties.</small>
+               <div class="error-message" id="email-error" aria-live="polite"></div>
+            </form>
+            <nav class="footer__nav footer-nav">
+               <ul class="footer-nav__list">
+                  <li class="footer-nav__title">About us</li>
+                  <li class="footer-nav__item">
+                     <a href="" class="footer-nav__link">Services</a>
+                  </li>
+                  <li class="footer-nav__item">
+                     <a href="" class="footer-nav__link">Our team</a>
+                  </li>
+                  <li class="footer-nav__item">
+                     <a href="" class="footer-nav__link">Careers</a>
+                  </li>
+               </ul>
+               <ul class="footer-nav__list">
+                  <li class="footer-nav__title">Work process</li>
+                  <li class="footer-nav__item">
+                     <a href="" class="footer-nav__link">FAQ</a>
+                  </li>
+                  <li class="footer-nav__item">
+                     <a href="" class="footer-nav__link">Our blog</a>
+                  </li>
+                  <li class="footer-nav__item">
+                     <a href="" class="footer-nav__link">Contacts</a>
+                  </li>
+               </ul>
+               <ul class="footer-nav__list">
+                  <li class="footer-nav__title">Privacy</li>
+                  <li class="footer-nav__item">
+                     <a href="" class="footer-nav__link">Terms of te use</a>
+                  </li>
+               </ul>
+            </nav>
+            <p class="footer__copyright">© 2025 - RunWebRun.</p>
+         </div>
+      </div>
+     </footer>
    </main>
 </body>
 </html>
-
-
-
-       
- 
+  

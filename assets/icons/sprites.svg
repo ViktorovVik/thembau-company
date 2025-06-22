@@ -12,7 +12,6 @@
    </symbol>
 
    <symbol width="641" height="641" viewBox="0 0 641 641" id='circle-icon'>
-      <circle cx="320.5" cy="320.5" r="320.5" fill="#F5F5F5" />
+      <circle cx="320.5" cy="320.5" r="320.5" />
    </symbol>
 </svg>
-

@@ -36,3 +36,22 @@
       display: none !important;
    }
 }
+
+.none {
+   display: none;
+}
+
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.85em;
+  margin-top: 5px;
+} 
+
+.link-wrapper {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+}

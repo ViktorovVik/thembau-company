@@ -2,13 +2,16 @@
 
 .hero {
    position: relative;
-   padding-block: clamp(1.875rem, -1.066rem + 14.71vw, 9.688rem);
+   padding-block: 100px;
+
+   
 
    &__decor {
       position: absolute;
       top: -42%;
       left: 19%;
       z-index: -1;
+      fill: #f5f5f5;;
 
       @include tablet {
          left: 3%;
@@ -23,6 +26,9 @@
       margin-bottom: 93px;
       text-align: center;
       
+      @include mobile {
+         margin-bottom: 33px;
+      }
    }
 
    &__subtitle {

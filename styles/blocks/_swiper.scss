@@ -10,11 +10,14 @@
 
 .slide {
    position: relative;
-   width: 100%;
-   min-height: 580px;
-
+   
    @include mobile {
       min-height: 450px;
+   }
+
+   &__header {
+      width: 100%;
+      min-height: 580px;
    }
 
    &__name {
@@ -23,16 +26,14 @@
       top: 37%;
       display: block;
       max-width: 516px;
-      width: 100%;
       font-weight: 500;
       font-size: clamp(1.875rem, 0.934rem + 4.71vw, 4.375rem);
       line-height: 1.14286;
       color: var(--color-light);
 
-      @include mobile {
-         max-width: 216px;
+      @include mobile-s {
+         max-width: 190px;
       }
-
       
    }
 
@@ -57,6 +58,11 @@
       background-size: cover;
       background-position: center;
    }
+}
+
+.swiper-values-wrapper {
+   margin-bottom: 85px;
+   overflow: hidden;
 }
 
 

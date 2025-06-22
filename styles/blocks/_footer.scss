@@ -1,0 +1,150 @@
+@use '../helpers' as *;
+
+.footer {
+   position: relative;
+   padding-block: clamp(1.875rem, -0.243rem + 10.59vw, 7.5rem);
+   background-color: var(--color-dark);
+   overflow: hidden;
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      color: var(--color-light);
+
+      @include lg {
+         flex-direction: column;
+      }
+   }
+
+   &__decor {
+      position: absolute;
+      top: 23%;
+      right: 14.3%;
+      fill: var(--color-circle-dark);
+
+      @include desktop {
+         right: -22.7%;
+      }
+
+       @include tablet {
+         display: none;
+      }
+   }
+
+   &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      
+   }
+
+   &__logo {
+      margin-bottom: 30px;
+   }
+
+   &__text {
+      margin-bottom: 76px;
+      max-width: 239px;
+      line-height: 1.625;
+
+      @include lg {
+         display: none;
+      }
+   }
+
+   &__props {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 81px;
+
+       @include lg {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__link,
+   &__soc1als {
+   font-size: 17px;
+   line-height: 1.76471;
+      &:hover {
+            opacity: 0.8;
+         }
+   }
+
+   &__soc1als {
+      margin-left: 0;
+
+      @include lg {
+         display: none;
+      }
+   }
+
+   &__divider {
+      position: absolute;
+      left: 46%;
+      top: 0;
+      border: 1px solid #202020;
+      height: 599px;
+
+       @include tablet {
+         display: none;
+      }
+   }
+
+   &__form {
+      margin-bottom: 85px;
+
+       @include lg {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__btn {
+       padding: 0;
+   }
+
+   &__nav {
+      display: flex;
+      column-gap: 124px;
+
+      @include mobile {
+         justify-content: space-between;
+         column-gap: 30px;
+      }
+
+      @include mobile-s {
+         flex-wrap: wrap;
+         row-gap: 30px;
+
+      }
+      
+   }
+
+   &__copyright {
+      position: absolute;
+      bottom: 20%;
+      right: 22%;
+      font-size: 14px;
+      line-height: 1.35714;
+      color: var(--color-grey);
+
+      @include desktop {
+         right: 2.3%;
+      }
+
+       @include lg {
+         bottom: 10%;
+      }
+
+      @include mobile-s {
+         bottom: 6%;
+      }
+   }
+}
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+@use '../helpers' as *;
+
+
+.form {
+   position: relative;
+   z-index: 9;
+   &__label {
+      font-size: 15px;
+      color: var(--color-grey);
+   }
+
+   &__action {
+      display: flex;
+      border-bottom: 1.20px solid #fff;
+      margin-top: 40px;
+   }
+
+   &__input {
+      flex-grow: 1;
+      background-color: transparent;
+      border: none;
+      color: var(--color-light);
+      
+      
+      &::placeholder {
+         font-size: 15px;
+         line-height: 1.26667;
+         color: var(--color-light);
+      }
+
+      &:valid {
+      background-color: var(--color-dark);
+      }
+
+   }
+}
+
